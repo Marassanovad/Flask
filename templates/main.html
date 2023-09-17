@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+    <section class="header">
+        <div class="header_content">
+            <img src="{{ url_for('static', filename='img/header_photo.webp') }}" alt="photo" class="header_content_img">
+            <div class="header_title">
+                <h1 class="title header_title_big">
+                    THE BRAND
+                </h1>
+                <h2 class="title header_title_little">
+                    OF LUXERIOUS <span class="title header_title_little header_title_little_pink">FASHION</span>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="offer">
+        <div class="offer_content">
+            <a href="/woman/" class="offer_url">
+                <div class="offer_img">
+                    <img src="{{ url_for('static', filename='img/offer1.svg') }}" alt="offer_img" class="offer_img">
+                </div>
+                <div class="offer_content_text">
+                    <p class="text item_text offer_text">30% OFF</p>
+                    <b class="text item_text offer_text offer_text_bold">FOR WOMEN</b>
+                </div>
+            </a>
+            <a href="/man/" class="offer_url">
+                <div class="offer_img">
+                    <img src="{{ url_for('static', filename='img/offer2.svg') }}" alt="offer_img" class="offer_img">
+                </div>
+                <div class="offer_content_text">
+                    <p class="text item_text offer_text">HOT DEAL</p>
+                    <b class="text item_text offer_text offer_text_bold">FOR MEN</b>
+                </div>
+            </a>
+            <a href="/kid/" class="offer_url">
+                <div class="offer_img">
+                    <img src="{{ url_for('static', filename='img/offer3.svg') }}" alt="offer_img" class="offer_img">
+                </div>
+                <div class="offer_content_text">
+                    <p class="text item_text offer_text">NEW ARRIVALS</p>
+                        <b class="text item_text offer_text offer_text_bold">FOR KIDS</b>
+                </div>
+            </a>
+            <a href="/accesories/" class="offer_url big">
+                <div class="offer_img big">
+                    <img src="{{ url_for('static', filename='img/offer4.svg') }}" alt="offer_img" class="offer_img offer_img_big">
+                </div>
+                <div class="offer_content_text">
+                    <p class="text item_text offer_text">LUXIROUS & TRENDY</p>
+                    <b class="text item_text offer_text offer_text_bold">ACCESORIES</b>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="product">
+        <div class="product_headline">
+            <h2 class="title product_title">Fetured Items</h2>
+            <p class="text product_text">Shop for items based on what we featured in this week</p>
+        </div>
+        <div class="product_content">
+            <div class="item product_item">
+                <div class="product_item_img block-1">
+                    <div class="hover-block">
+                        <button class="text buy_item">
+                            <img src="{{ url_for('static', filename='img/button_image.svg') }}" alt=""> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product_item_content">
+                    <h3 class="title item_title product_item_title">ELLERY X M'O CAPSULE</h3>
+                    <p class="text item_text product_item_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h3 class="product_item_price">$52.00</h3>
+                </div>
+            </div>
+            <div class="item product_item">
+                <div class="product_item_img block-2">
+                    <div class="hover-block">
+                        <button class="text buy_item"><img src="{{ url_for('static', filename='img/button_image.svg') }}" alt=""> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product_item_content">
+                    <h3 class="title item_title product_item_title">ELLERY X M'O CAPSULE</h3>
+                    <p class="text item_text product_item_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h3 class="product_item_price">$52.00</h3>
+                </div>
+            </div>
+            <div class="item product_item">
+                <div class="product_item_img block-3">
+                    <div class="hover-block">
+                        <button class="text buy_item"><img src="{{ url_for('static', filename='img/button_image.svg') }}" alt=""> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product_item_content">
+                    <h3 class="title item_title product_item_title">ELLERY X M'O CAPSULE</h3>
+                    <p class="text item_text product_item_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h3 class="product_item_price">$52.00</h3>
+                </div>
+            </div>
+            <div class="item product_item">
+                <div class="product_item_img block-4">
+                    <div class="hover-block" >
+                        <button class="text buy_item"><img src="{{ url_for('static', filename='img/button_image.svg') }}" alt=""> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product_item_content">
+                    <h3 class="title item_title product_item_title">ELLERY X M'O CAPSULE</h3>
+                    <p class="text item_text product_item_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h3 class="product_item_price">$52.00</h3>
+                </div>
+            </div>
+            <div class="item product_item">
+                <div class="product_item_img block-5">
+                    <div class="hover-block">
+                        <button class="text buy_item"><img src="{{ url_for('static', filename='img/button_image.svg') }}" alt=""> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product_item_content">
+                    <h3 class="title item_title product_item_title">ELLERY X M'O CAPSULE</h3>
+                    <p class="text item_text product_item_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h3 class="product_item_price">$52.00</h3>
+                </div>
+            </div>
+            <div class="item product_item">
+                <div class="product_item_img block-6">
+                    <div class="hover-block">
+                        <button class="text buy_item"><img src="{{ url_for('static', filename='img/button_image.svg') }}" alt=""> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product_item_content">
+                    <h3 class="title item_title product_item_title">ELLERY X M'O CAPSULE</h3>
+                    <p class="text item_text product_item_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h3 class="product_item_price">$52.00</h3>
+                </div>
+            </div>
+        </div>
+        <a class="product_button" href="#">Browse All Product</a>
+    </section>
+
+{% endblock %}
