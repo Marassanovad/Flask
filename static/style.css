@@ -492,6 +492,58 @@ img {
 .socila_media_link:hover path {
     fill: white;
 }
+.content_login{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+.login_content_title{
+    max-width: 360px;
+    gap: 10px;
+    text-align: end;
+
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+.login_form_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+.form_email{
+    border-radius: 50px;
+}
+.form_name{
+    border-radius: 50px;
+}
+.login_button{
+    justify-self:end;
+    border-radius: 50px;
+    max-width: 257px;
+    padding: 8px 97px;
+}
+.logout{
+    flex-direction: column;
+    align-items: center;
+}
+.logout_button{
+    text-decoration: none;
+    border-radius: 50px;
+    max-width: 257px;
+    padding: 8px 97px;
+    display: flex;
+    align-items: center;
+}
+ 
 
 @media (max-width: 1024px) and (min-width: 768px) {
     .header_menu{
@@ -660,5 +712,4 @@ img {
         padding-top: 43px;
         padding-bottom: 9px;
     }
-     
 }
