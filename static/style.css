@@ -501,9 +501,11 @@ img {
 }
 .login_content_title{
     max-width: 360px;
-    gap: 10px;
     text-align: end;
 
+}
+.login_text{
+    padding-top: 15px;
 }
 .login_form{
     display: flex;
@@ -520,6 +522,10 @@ img {
     align-items: center;
     gap: 10px;
     padding: 20px;
+    text-align: left;
+}
+.form_text{
+    text-align: left;
 }
 .form_email{
     border-radius: 50px;
@@ -545,6 +551,52 @@ img {
     display: flex;
     align-items: center;
 }
+.content{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.form{
+    border-radius: 50px;
+    align-items: center;
+    padding: 5px 15px ;
+}
+input{
+    border: none;
+    background: #E1E1E1;
+    padding: 0;
+    height: 40px;
+    width: 240px;
+    /* padding: 7px 64px 6px 22px; */
+}
+.text_button{
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 10px;
+}
+.text_button:hover{
+    text-decoration: underline;
+    color: #F16D7F;
+}
+.user_content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.table{
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+ }
  
 
 @media (max-width: 1024px) and (min-width: 768px) {

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+      <img src="{{ url_for('static', filename='img/404.svg') }}"  alt="button" class="header_button_img">
+      <h1 class="title">Что-то пошло не так ...</h1>
+      <a class="button subscribe_button logout_button" href="{{ url }}">Back</a>
+  </div>
+
+{% endblock %}

@@ -5,15 +5,15 @@
 {% endblock %}
 
 {% block content %}
-  <div class="content_login">
+<div class="content_login">
         <div class="login_content_title">
-          <h3 class="title login_title">Login</h3>
+          <h3 class="title login_title">Registration</h3>
           <p class="text login_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore beatae, minima recusandae id praesentium facilis quaerat alias sapiente cupiditate necessitatibus!</p>
         </div>
         <div class="login_form">
-          <form class="email login_form_text" method="POST" action="{{ url_for('login') }}">
-              {{ form.csrf_token }}
-              {% for field in form if field.name != 'csrf_token' %}
+            <form method="POST" action="{{ url_for('register') }}" class="email login_form_text">
+                {{ form.csrf_token }}
+                {% for field in form if field.name != 'csrf_token' %}
                 <p class="text form_text">
                     {{  field.label }}
                 </p>
@@ -30,13 +30,9 @@
                 </p>
                 {% endfor %}
                 <p>
-                    <input class="button subscribe_button login_button" type="submit" value="Login">
+                    <input class="button subscribe_button login_button" type="submit" value="Register">
                 </p>
-                <p>
-                    <a class="button text text_button" type="submit" href="/register">or Registration</a>
-                </p>
-          </form>
-
+            </form>
         </div>
     </div>
 {% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+  <div class="content_login">
+        <div class="login_content_title">
+          <h3 class="title login_title">Guest Login Form Cookie</h3>
+          <p class="text login_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore beatae, minima recusandae id praesentium facilis quaerat alias sapiente cupiditate necessitatibus!</p>
+        </div>
+        <div class="login_form">
+          <form class="email login_form_text" method="post">
+            <input type="email" class="input_email form_email" name="email" placeholder="Your Email" required>
+            <input type="text" class="input_email form_name" name="name" placeholder="Your name" required>
+              <input class="button subscribe_button login_button" type="submit" value="Отправить">
+          </form>
+        </div>
+    </div>
+
+
+{% endblock %}
