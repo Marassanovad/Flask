@@ -39,20 +39,24 @@ def accesories_page():
 def index():
     name = request.cookies.get('name')
     if name:
-        return render_template('hello_user.html', name=name)
+        return render_template('hello_user.html', name=name, title='Account')
     else:
         return redirect('/login')
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
     context = {'title': 'Login'}
-    if request.method == 'POST':
-        name = request.form.get('name')
-        email = request.form.get('email')
-        response = make_response(redirect("/"))
-        response.set_cookie('name', name)
-        response.set_cookie('email', email)
-        return response
-    return render_template('login.html', **context)
+    name = request.cookies.get('name')
+    if name:
+        return render_template('hello_user.html', name=name, title='Account')
+    else:
+        if request.method == 'POST':
+            name = request.form.get('name')
+            email = request.form.get('email')
+            response = make_response(redirect("/"))
+            response.set_cookie('name', name)
+            response.set_cookie('email', email)
+            return response
+        return render_template('login.html', **context)
 @app.route('/logout/')
 def logout():
     response = make_response(redirect("/"))

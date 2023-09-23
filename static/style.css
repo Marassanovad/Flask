@@ -510,14 +510,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    border: #F16D7F 2px solid;
 }
 .login_form_text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    padding: 20px;
 }
 .form_email{
     border-radius: 50px;
