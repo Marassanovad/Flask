@@ -60,13 +60,14 @@ def page_not_found(e):
     return render_template('404.html', **context), 404
 
 
-@app.route('/')
-def index():
-    name = request.cookies.get('name')
+@app.route('/account/')
+def account():
+    name = session.get('username')
     if name:
         return render_template('hello_user.html', name=name, title='Account')
     else:
         return redirect('/login')
+
 
 
 # @app.route('/login_cookie/', methods=['GET', 'POST'])
@@ -134,7 +135,8 @@ def register():
         )
         db.session.add(user)
         db.session.commit()
-        print("ok")
+        session['username'] = form.name.data
+        return redirect(url_for('account'))
     return render_template('register.html', form=form)
 
 
